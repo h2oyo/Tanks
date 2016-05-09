@@ -1,0 +1,22 @@
+TurretState
+
+
+Scan state: spins turret to the right till finds a target then switches to Aim state.
+
+
+Aim state: trys and lines up the turret to the enemy position then halts and goes to the fire state.
+
+
+Fire state: fires bullet switchs back to aim state.
+
+
+
+
+Tank State
+
+Seek state: Randomly picks a position every 2-6 seconds and heads to it. Unless enemy tank is insight switchs to Chase
+
+Chase State: moves towards last known position of the enemy target. after reachs the position keep chasing. timer switchs back to seek state
+
+Avoid state: If turret takes dmg back up then switch back to seek state.
+
